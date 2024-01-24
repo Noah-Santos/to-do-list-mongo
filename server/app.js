@@ -20,7 +20,7 @@ app.use("/task", taskRoute);
 
 const initServer = async () => {
 	try {
-		await connectDB('mongodb+srv://nsanto591:todolist626@data.gvhmae7.mongodb.net/Info');
+		await connectDB();
 		app.listen(port, () => {
 			console.log(`Listening on port ${port}`);
 		});
